@@ -1,0 +1,1 @@
+#define U_BOOT_VERSION "U-Boot 2009.08-00010-g37236babc"

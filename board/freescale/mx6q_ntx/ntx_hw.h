@@ -1,0 +1,1 @@
+../mx6sl_ntx/ntx_hw.h

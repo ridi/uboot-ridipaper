@@ -1,0 +1,33 @@
+#ifndef __mx6sl_ntx_lpddr2_h//[
+#define __mx6sl_ntx_lpddr2_h
+
+
+#undef PHYS_SDRAM_1_SIZE 
+#define PHYS_SDRAM_1_SIZE	(512 * 1024 * 1024)
+
+#include "mx6sl_ntx_android.h"
+
+#ifndef CONFIG_MX6SL_NTX_LPDDR2//[
+	#define CONFIG_MX6SL_NTX_LPDDR2
+#endif //]CONFIG_MX6SL_NTX_LPDDR2
+
+#ifndef CONFIG_MT42L128M32D1 //[
+	#define CONFIG_MT42L128M32D1
+#endif //]CONFIG_MT42L128M32D1
+
+#define CONFIG_FEC_CLOCK_FROM_ANATOP
+#define CONFIG_FEC0_IOBASE	ENET_BASE_ADDR
+#define CONFIG_FEC0_PINMUX	-1
+#define CONFIG_FEC0_MIIBASE	-1
+#define CONFIG_GET_FEC_MAC_ADDR_FROM_IIM
+#define CONFIG_MXC_FEC
+#define CONFIG_MII_GASKET
+#define CONFIG_FEC0_PHY_ADDR		0
+#define CONFIG_ETH_PRIME
+#define CONFIG_MII
+#define CONFIG_IPADDR			192.168.1.103
+#define CONFIG_SERVERIP			192.168.1.101
+#define CONFIG_NETMASK			255.255.255.0
+
+#endif //]__mx6sl_ntx_lpddr2_h
+
